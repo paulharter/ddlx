@@ -21,7 +21,7 @@ sharing the central db holds a common set of agreed rules and acts as a trusted 
 
 For reads it will provide row and column based filtering based on scopes and users roles.
 
-For reads there will be three flavors of permissions grant that offer different behaviours for partitioned writes:
+For writes there will be three flavors of permissions grant that offer different behaviours for partitioned writes:
 
 - `soft` These are permissions that are irrevocable in a partitioned system. They naturally converge and offer finality of local writes, like a permissions CRDT, but they allow certain kinds of abuse.
 - `hard` These permissions are always re-evaluated by their issuer so all writes made under them are tentative, but they allow strict central enforcement.
