@@ -1,5 +1,5 @@
 # DDLX
-### Portable application level permissions extension for Postgres
+### A Postgrex extension providing portable application level permissions for local-first sync
 
 DDLX was designed for use with ElectricSQL as a built-in permissions layer:
 
