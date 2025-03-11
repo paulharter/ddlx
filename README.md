@@ -8,7 +8,7 @@ https://legacy.electric-sql.com/docs/api/ddlx
 Electric has since evolved into a simpler, scalable Postgres sync service https://electric-sql.com/ 
 and no longer provides a built-in permissions system. 
 
-This repo is work-in-progress to take the existing DDLX and rework it as a Postgres extension, 
+This repo is work-in-progress (don't hold your breath) to take the existing DDLX and rework it as a Postgres extension, 
 particularly with an eye on using it in tandem with Electric's Postgres <> PGLite sync.
 
 When ready DDLX will be a Postgres extension suitable for writing complex application level permissions for direct database to database partial sync.
