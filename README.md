@@ -19,7 +19,9 @@ the permission rules and the grants are all in the data itself.
 The authority over records with lies with their creators but rather than using chains of certs to enforce things like ownership and 
 sharing the central db holds a common set of agreed rules and acts as a trusted proxy between users allowing for much lighter weight evaluation.
 
-There will be three flavors of permissions grant that offer different behaviours for partitioned writes:
+For reads it will provide row and column based filtering based on users roles.
+
+For reads there will be three flavors of permissions grant that offer different behaviours for partitioned writes:
 
 - `soft` These are permissions that are irrevocable in a partitioned system. They naturally converge and offer finality of local writes, like a permissions CRDT, but they allow certain kinds of abuse.
 - `hard` These permissions are always re-evaluated by their issuer so all writes made under them are tentative, but they allow strict central enforcement.
